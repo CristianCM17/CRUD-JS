@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded',function () {
     const table= document.getElementById('table');
     const btn= document.getElementById('add');  
 
+    let id=1; //el id de cada fila
+    
+    function removeTOdo(id) { //funcion para remover la fila, recibe el id de la fila
+        
+        document.getElementById(id).remove();
+       
+
+        
+    }
+
     function addTodo() {
         if (title.value === '' && description.value === '') {
             alert.classList.remove('d-none');//la alerta se le remueve la clase de css de display-none
